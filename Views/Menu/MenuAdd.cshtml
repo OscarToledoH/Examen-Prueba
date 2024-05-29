@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Alta de Menu";
+}
+
+<form asp-asp-controller="Menu" asp-action="MenuSave">
+    <div class="mb-3">
+        <label for="nombre" class="from-label">Nombre</label>
+        <br>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la Receta" />
+
+        <label for="precio" class="from-label">Precio</label>
+        <br>
+        <input type="number" class="form-control" id="nombre" name="nombre" placeholder="Precio de la comida" />
+    </div>
+</form>
+
+<a asp-controller="Menu" asp-action="MenuSave" class="btn btn-primary mb-3"> Guardar</a>
+
+
+<a asp-controller="Home" asp-action="index" class="btn btn-secundary mb-3"> Cancelar</a>
